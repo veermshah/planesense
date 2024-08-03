@@ -5,5 +5,5 @@ export default function InitalRouting() {
 
     if (!rootNavigationState?.key) return null;
 
-    return <Redirect href={"/(tabs)/practice"} />;
+    return <Redirect href={"/(tabs)/learn"} />;
 }

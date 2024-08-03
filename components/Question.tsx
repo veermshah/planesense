@@ -31,7 +31,7 @@ const Question: React.FC<QuestionProps> = ({ image, options }) => {
                 className="justify-center rounded-xl w-80 h-52"
             />
             <TouchableHighlight
-                className="bg-secondary rounded-lg p-4 mt-12 mb-2"
+                className="bg-primary rounded-lg p-4 mt-12 mb-2"
                 underlayColor="rgba(0, 0, 0, 1)"
                 onPress={() => {
                     setAnswered(true);
@@ -42,7 +42,7 @@ const Question: React.FC<QuestionProps> = ({ image, options }) => {
                 </Text>
             </TouchableHighlight>
             <TouchableHighlight
-                className="bg-secondary rounded-lg p-4  mb-2"
+                className="bg-primary rounded-lg p-4  mb-2"
                 underlayColor="rgba(0, 0, 0, 1)"
                 onPress={() => {
                     setAnswered(true);
@@ -53,7 +53,7 @@ const Question: React.FC<QuestionProps> = ({ image, options }) => {
                 </Text>
             </TouchableHighlight>
             <TouchableHighlight
-                className="bg-secondary rounded-lg p-4 mb-2"
+                className="bg-primary rounded-lg p-4 mb-2"
                 underlayColor="rgba(0, 0, 0, 1)"
                 onPress={() => {
                     setAnswered(true);
@@ -64,7 +64,7 @@ const Question: React.FC<QuestionProps> = ({ image, options }) => {
                 </Text>
             </TouchableHighlight>
             <TouchableHighlight
-                className="bg-secondary rounded-lg p-4 mb-2"
+                className="bg-primary rounded-lg p-4 mb-2"
                 underlayColor="rgba(0, 0, 0, 1)"
                 onPress={() => {
                     setAnswered(true);

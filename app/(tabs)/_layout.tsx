@@ -45,7 +45,7 @@ const TabLayout: React.FC = () => {
     const [isReady, setIsReady] = useState(false);
     useEffect(() => {
         const prepare = async () => {
-            await new Promise((resolve) => setTimeout(resolve, 2000)); // Example delay
+            await new Promise((resolve) => setTimeout(resolve, 500)); // Example delay
             setIsReady(true);
         };
         prepare();
