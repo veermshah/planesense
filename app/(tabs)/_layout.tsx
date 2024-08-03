@@ -1,9 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import { Redirect, Tabs } from "expo-router";
-import { Image, Text, View } from "react-native";
+import { Image, Text, View, ActivityIndicator } from "react-native";
 
 import { icons } from "../../constants";
 import Loader from "../../components/Loader";
+import { useEffect, useState } from "react";
 interface TabIconProps {
     icon: string;
     color: string;
@@ -41,8 +42,26 @@ const TabIcon: React.FC<TabIconProps> = ({ icon, color, name, focused }) => {
 };
 
 const TabLayout: React.FC = () => {
+    const [isReady, setIsReady] = useState(false);
+    useEffect(() => {
+        const prepare = async () => {
+            await new Promise((resolve) => setTimeout(resolve, 2000)); // Example delay
+            setIsReady(true);
+        };
+        prepare();
+    }, []);
+
     return (
         <>
+            {!isReady ? (
+                <View className="absolute top-0 left-0 right-0 bottom-0 bg-white justify-center items-center z-50">
+                    <ActivityIndicator size="large" color="#249CD2" />
+                    <Text className="mt-4">Loading...</Text>
+                </View>
+            ) : (
+                ""
+            )}
+
             <Tabs
                 screenOptions={{
                     tabBarActiveTintColor: "#249CD2",

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "319614818027",
+    "firebase_url": "https://planesense-38dd2-default-rtdb.firebaseio.com",
+    "project_id": "planesense-38dd2",
+    "storage_bucket": "planesense-38dd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319614818027:android:e160da8d63936b03ca10ae",
+        "android_client_info": {
+          "package_name": "com.veerms.planesense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319614818027-lotqfub4tcohg9egf7qbcrblc32hansi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtgt9Hr0HaojOKnWtgxtGtwZlwX3FSbaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319614818027-lotqfub4tcohg9egf7qbcrblc32hansi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "319614818027-98gqcph0fgj0kgrqq9lr13pf0b95d12o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.veerms.planesense"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
